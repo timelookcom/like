@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+   
+    <script src="js/scripttwo.js" defer></script> 
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .tile {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .tile:hover {
+            transform: scale(1.05);
+        }
+        h3 {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Our Restaurant</h1>
+    <div class="container">
+        <div id="menu-tile" class="tile">
+            <h3>Menu</h3>
+            <p>Explore our delicious offerings!</p>
+        </div>
+        <div id="specials-tile" class="tile">
+            <h3>Specials</h3>
+            <p>Click here for today's surprises!</p>
+        </div>
+        <div id="map-tile" class="tile">
+            <h3>Map</h3>
+            <p>Find us here!</p>
+        </div>
+    </div>
+</body>
+</html>
